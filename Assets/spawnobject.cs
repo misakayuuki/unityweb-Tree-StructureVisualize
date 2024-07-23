@@ -30,6 +30,8 @@ public class SpawnObject : MonoBehaviour
     public string type;
 
     public int side;
+
+    public float[] r;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,21 +42,21 @@ public class SpawnObject : MonoBehaviour
                 tradius = 0.0f;
                 break;
             case 1:
-                tradius = 120.0f;
+                tradius = r[1];
                 break;
             case 2:
-                tradius = 40.0f;
+                tradius = r[2];
                 break;
             case 3:
-                tradius = 20.0f;
+                tradius = r[3];
                 break;
             case 4:
-                tradius = 10.0f;
+                tradius = r[4];
                 break;
         }
         //Debug.Log(this.gameObject.GetComponentsInChildren<Transform>().GetValue(3).ConvertTo<Transform>().name);
         //Debug.Log(40.0f/tradius);
-        this.gameObject.GetComponentsInChildren<Transform>().GetValue(3).ConvertTo<Transform>().transform.localScale = new Vector3(0.01f*tradius/4.0f,0.01f*tradius/4.0f,0.01f*tradius/4.0f);
+        this.gameObject.GetComponentsInChildren<Transform>().GetValue(4).ConvertTo<Transform>().transform.localScale = new Vector3(0.01f*tradius/4.0f,0.01f*tradius/4.0f,0.01f*tradius/4.0f);
          
         GameObject prefab = (GameObject)Resources.Load("Sphere");
         GameObject cy = (GameObject)Resources.Load("Cylinder");
@@ -80,17 +82,18 @@ public class SpawnObject : MonoBehaviour
             {
                 GameObject temp = Instantiate(prefab, new Vector3(this.transform.position.x+tradius*Mathf.Cos(angle*(float)i),this.transform.position.y-40,this.transform.position.z+tradius*Mathf.Sin(angle*(float)i)),Quaternion.identity);
                 
-                temp.transform.parent = this.gameObject.GetComponentsInChildren<Transform>().GetValue(3)
+                temp.transform.parent = this.gameObject.GetComponentsInChildren<Transform>().GetValue(4)
                     .ConvertTo<Transform>();
                 temp.GetComponent<SpawnObject>().level = this.level+1;
                 temp.GetComponent<SpawnObject>().side = this.side;
                 temp.GetComponent<SpawnObject>().c_member = this.c_member.children[i];
+                temp.GetComponent<SpawnObject>().r = this.r;
                 float length = (temp.transform.position - this.transform.position).magnitude;
                 GameObject cy1 = Instantiate(cy, (temp.transform.position + this.transform.position) / 2,
                     Quaternion.identity);
                 cy1.transform.localScale = new Vector3(1,length/2,1);
                 cy1.transform.up = -(temp.transform.position - this.transform.position);
-                cy1.transform.parent = this.gameObject.GetComponentsInChildren<Transform>().GetValue(3)
+                cy1.transform.parent = this.gameObject.GetComponentsInChildren<Transform>().GetValue(4)
                     .ConvertTo<Transform>();
             }
         }
@@ -106,16 +109,23 @@ public class SpawnObject : MonoBehaviour
             if (side == 0)
             {
                 this.gameObject.GetComponent<MeshRenderer>().material = thisLevelleft;
+                
             }else if (side == 1)
             {
                 this.gameObject.GetComponent<MeshRenderer>().material = thisLevel;
             }
-            
+            this.gameObject.GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0.1f);
         }
         else
         {
             this.gameObject.GetComponent<MeshRenderer>().material = hightlight;
+            this.gameObject.GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1f);
         }
+    }
+
+    public void SetRadius(float radius)
+    {
+        this.gameObject.GetComponentsInChildren<Transform>().GetValue(3).ConvertTo<Transform>().transform.localScale = new Vector3(0.01f*radius/4.0f,0.01f*radius/4.0f,0.01f*radius/4.0f);
     }
 
 }

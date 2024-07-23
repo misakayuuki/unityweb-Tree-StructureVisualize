@@ -9,7 +9,7 @@ Shader "Unlit/Scan_Code02"
 
         [Header(Base)]
         _MainTex ("Texture", 2D) = "white" {}
-        _Color("Color",color)=(1,1,1,1)
+        _Color("Color",color)=(1,1,1,0.2)
         _Instensity("Instensity",float)=0.5
         _MainUVSpeedX("MainUVSpeed X",float)=1
         _MainUVSpeedY("MainUVSpeed Y",float)=1

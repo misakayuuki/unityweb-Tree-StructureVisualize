@@ -527,6 +527,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tradius: 40
   jsonData: 
+  levelmaxnum: 00000000000000000000000000000000000000000000000000000000
+  r:
+  - 2
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  r1:
+  - 2
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  depth: 0
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0

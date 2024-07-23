@@ -29,12 +29,20 @@ public class ReadJson : MonoBehaviour
     }
     public float tradius = 480.0f;
     public string jsonData;
+
+    public int[] levelmaxnum ;
+    public float[] r ;
+    public float[] r1 ;
+    public int depth;
     void Start()
     {
+        depth = 0;
         #if UNITY_EDITOR 
-        
+        levelmaxnum = new int[7] { 2, 0, 0, 0, 0, 0, 0 };
+        r = new float[7] { 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+        r1 = new float[7] { 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
         jsonData = ReadData();
-        Debug.Log(jsonData);
+        //Debug.Log(jsonData);
         Data m_tree = JsonUtility.FromJson<Data>(jsonData);
         GameObject prefab = (GameObject)Resources.Load("Sphere");
         int i = 0;
@@ -50,18 +58,32 @@ public class ReadJson : MonoBehaviour
 
         };
         
-        
+        foreach (Children item1 in m_tree.children)
+        {
+            getmaxnum(item1,1);
+        }
+        for (int j = depth - 1; j >= 0; j--)
+        {
+            if (r1[j + 1] < 0.1f)
+            {
+                r1[j + 1] = 10.0f;
+            }
+            r[j] = (r1[j + 1]) / Mathf.Sin(Mathf.PI / levelmaxnum[j]);
+            r1[j] = r[j] + r1[j + 1];
+
+        }
         
         
         foreach (Children item in m_tree.children)
         {
             
             
-            GameObject temp = Instantiate(prefab, new Vector3(0,0,Mathf.Pow(-1,i+1)*180.0f),Quaternion.identity);
+            GameObject temp = Instantiate(prefab, new Vector3(0,0,Mathf.Pow(-1,i+1)*r[0]),Quaternion.identity);
             temp.GetComponent<SpawnObject>().level = 1;
             temp.GetComponent<SpawnObject>().side = i;
             temp.GetComponent<SpawnObject>().c_member = item;
-            Debug.Log(item.name);
+            temp.GetComponent<SpawnObject>().r = this.r;
+            //Debug.Log(item.name);
             i++;
             float length = (temp.transform.position - temp1.transform.position).magnitude;
             GameObject cy = (GameObject)Resources.Load("Cylinder");
@@ -88,7 +110,7 @@ public class ReadJson : MonoBehaviour
     {
         string readData;
         string fileUrl =  Application.streamingAssetsPath+   "/recordsReal.json";
-        Debug.Log(fileUrl);
+        //Debug.Log(fileUrl);
         using (StreamReader sr = File.OpenText(fileUrl))
         {
            
@@ -111,8 +133,20 @@ public class ReadJson : MonoBehaviour
         temp1.GetComponent<SpawnObject>().level = 1;
         temp1.GetComponent<SpawnObject>().side = 0;
         temp1.name = m_tree.name;
-        
-        
+        foreach (Children item1 in m_tree.children)
+        {
+            getmaxnum(item1,1);
+        }
+        for (int j = depth - 1; j >= 0; j--)
+        {
+            if (r1[j + 1] < 0.1f)
+            {
+                r1[j + 1] = 10.0f;
+            }
+            r[j] = (r1[j + 1]) / Mathf.Sin(Mathf.PI / levelmaxnum[j]);
+            r1[j] = r[j] + r1[j + 1];
+
+        }
         
         foreach (Children item in m_tree.children)
         {
@@ -135,6 +169,33 @@ public class ReadJson : MonoBehaviour
             
         }
 
+
+
+        
+
         return true;
+    }
+
+    void getmaxnum(Children child, int level)
+    {
+        if ((level + 1) > levelmaxnum.Length)
+        {
+            return;
+        }
+
+        depth = level;
+        //Debug.Log(level);
+        if (child.children.Length > levelmaxnum[level])
+        {
+            levelmaxnum[level] = child.children.Length;
+        }
+
+        if (child.children.Length > 0)
+        {
+            foreach(Children item in child.children)
+            {
+                getmaxnum(item,level+1);
+            }
+        }
     }
 }

@@ -13,18 +13,15 @@ public class cameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
+        Vector3 delta = new Vector3(-Input.GetAxis("Vertical") * 5, Input.GetAxis("UpDown") * 5,
+            Input.GetAxis("Horizontal") * 5);
+        this.transform.position += delta;
+        if (Input.GetMouseButton(0) && Input.GetKey(KeyCode.LeftControl))
         {
-                    if (Input.GetMouseButton(0))
-                    {
-                        Vector3 delta = new Vector3(0, -Input.GetAxis("Mouse Y")*10, -Input.GetAxis("Mouse X")*10);
-                        Debug.Log(delta);
-                        this.transform.position += delta;
-                    }
-            
-        }
+            Quaternion dr =Quaternion.Euler(this.transform.rotation.eulerAngles - new Vector3(-Input.GetAxis("Mouse Y") * 3, Input.GetAxis("Mouse X") * 3,0));
 
-        Vector3 back = new Vector3(-Input.GetAxis("Mouse ScrollWheel")*10, 0, 0);
-        this.transform.position += back;
+            this.transform.rotation = dr;
+        }
+        
     }
 }
