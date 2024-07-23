@@ -17,7 +17,7 @@ public class rotate : MonoBehaviour
     #if UNITY_WEBGL && !UNITY_EDITOR
     [DllImport("__Internal")]
     #endif
-    private static extern void PostScore(string input);
+    private static extern void PostScore(string id,int dsId,string type,string name);
     
     // Start is called before the first frame update
     void Start()
@@ -43,8 +43,10 @@ public class rotate : MonoBehaviour
                     isRotate = true;
                     startRotation = t.transform.rotation;
                     Vector3 frontPoint = new Vector3(40, 0, 0);
-                    float angle = Vector3.Angle(frontPoint, hitInfo.collider.gameObject.transform.position);
-                    if (hitInfo.collider.gameObject.transform.position.z < 0)
+                    Vector3 backPoint = new Vector3(hitInfo.collider.gameObject.transform.position.x-hitInfo.collider.gameObject.transform.parent.transform.position.x, 0, hitInfo.collider.gameObject.transform.position.z-hitInfo.collider.gameObject.transform.parent.transform.position.z);
+                    float angle = Vector3.Angle(frontPoint, backPoint);
+                    //Debug.Log(hitInfo.collider.gameObject.transform.parent.transform.position);
+                    if (hitInfo.collider.gameObject.transform.position.z-hitInfo.collider.gameObject.transform.parent.transform.position.z < 0)
                     {
                         angle = -angle;
                     }
@@ -52,7 +54,6 @@ public class rotate : MonoBehaviour
                     Vector3 r = new Vector3(0, -angle, 0);
                     endRotation.eulerAngles = t.transform.eulerAngles - r;
                     show.text = hitInfo.collider.gameObject.name;
-                    Material tempMaterial;
                     GameObject[] a =GameObject.FindGameObjectsWithTag("Sphere");
                     for (int i = 0; i < a.Length; i++)
                     {
@@ -61,11 +62,12 @@ public class rotate : MonoBehaviour
                     
                     hitInfo.collider.gameObject.GetComponent<SpawnObject>().isSelected = true;
                     #if UNITY_WEBGL && !UNITY_EDITOR
-                        PostScore(hitInfo.collider.gameObject.name);
+                        PostScore(hitInfo.collider.gameObject.GetComponent<SpawnObject>().id,hitInfo.collider.gameObject.GetComponent<SpawnObject>().dsId,hitInfo.collider.gameObject.GetComponent<SpawnObject>().type,hitInfo.collider.gameObject.GetComponent<SpawnObject>().name);
                     #endif
+                    
 
                     Camera.main.transform.position =
-                        new Vector3(150, hitInfo.collider.gameObject.transform.position.y+60, 0);
+                        new Vector3(hitInfo.collider.gameObject.transform.parent.transform.position.x+150, hitInfo.collider.gameObject.transform.parent.transform.position.y+80, hitInfo.collider.gameObject.transform.parent.transform.position.z);
                     
 
                 }
@@ -91,4 +93,6 @@ public class rotate : MonoBehaviour
     {
         show.text = s;
     }
+
+   
 }

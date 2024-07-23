@@ -1,0 +1,1264 @@
+{
+  "id": 0,
+  "name": "根节点",
+  "type": "root",
+  "dsId": 0,
+  "children": [
+    {
+      "id": "0-00",
+      "name": "一级主题0",
+      "type": "topic",
+      "dsId": 0,
+      "children": [
+        {
+          "id": "0-00-10",
+          "name": "二级主题0",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-00-10-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-10-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-10-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-10-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-10-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-10-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-10-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-10-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-10-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-00-11",
+          "name": "二级主题1",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-00-11-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-11-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-11-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-11-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-11-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-11-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-11-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-11-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-11-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-00-12",
+          "name": "二级主题2",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-00-12-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-12-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-12-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-12-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-12-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-12-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-12-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-12-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-12-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-00-13",
+          "name": "二级主题3",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-00-13-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-13-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-13-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-13-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-13-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-13-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-13-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-13-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-13-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-00-14",
+          "name": "二级主题4",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-00-14-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-14-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-14-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-14-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-14-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-14-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-00-14-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-00-14-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-00-14-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0-01",
+      "name": "一级主题1",
+      "type": "topic",
+      "dsId": 0,
+      "children": [
+        {
+          "id": "0-01-10",
+          "name": "二级主题0",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-01-10-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-10-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-10-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-10-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-10-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-10-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-10-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-10-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-10-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-01-11",
+          "name": "二级主题1",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-01-11-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-11-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-11-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-11-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-11-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-11-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-11-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-11-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-11-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-01-12",
+          "name": "二级主题2",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-01-12-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-12-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-12-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-12-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-12-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-12-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-12-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-12-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-12-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-01-13",
+          "name": "二级主题3",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-01-13-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-13-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-13-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-13-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-13-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-13-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-13-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-13-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-13-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0-01-14",
+          "name": "二级主题4",
+          "type": "topic",
+          "dsId": 1,
+          "children": [
+            {
+              "id": "0-01-14-20",
+              "name": "三级主题0",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-14-20-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-20-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-20-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-14-21",
+              "name": "三级主题1",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-14-21-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-21-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-21-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-14-22",
+              "name": "三级主题2",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-14-22-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-22-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-22-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "0-01-14-23",
+              "name": "三级主题3",
+              "type": "table",
+              "dsId": 2,
+              "children": [
+                {
+                  "id": "0-01-14-23-30",
+                  "name": "三级主题0",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-23-31",
+                  "name": "三级主题1",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                },
+                {
+                  "id": "0-01-14-23-32",
+                  "name": "三级主题2",
+                  "type": "topic",
+                  "dsId": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
