@@ -58,10 +58,15 @@ public class ReadJson : MonoBehaviour
             children = {}
 
         };
-        
+        int minDepth = 999;
         foreach (Children item1 in m_tree.children)
         {
             getmaxnum(item1,1);
+            int d = branchDepth(item1, 1);
+            if (d<=minDepth)
+            {
+                minDepth = d;
+            }
         }
         for (int j = depth - 1; j >= 0; j--)
         {
@@ -73,6 +78,9 @@ public class ReadJson : MonoBehaviour
             r1[j] = r[j] + r1[j + 1];
 
         }
+
+
+        r[0] = (r1[1]-r1[minDepth]+10.0f)/Mathf.Sin(Mathf.PI / levelmaxnum[0]);
         
         
         foreach (Children item in m_tree.children)
@@ -151,6 +159,16 @@ public class ReadJson : MonoBehaviour
         {
             getmaxnum(item1,1);
         }
+        int minDepth = 999;
+        foreach (Children item1 in m_tree.children)
+        {
+            getmaxnum(item1,1);
+            int d = branchDepth(item1, 1);
+            if (d<=minDepth)
+            {
+                minDepth = d;
+            }
+        }
         for (int j = depth - 1; j >= 0; j--)
         {
             if (r1[j + 1] < 0.1f)
@@ -162,6 +180,7 @@ public class ReadJson : MonoBehaviour
 
         }
         
+        r[0] = (r1[1]-r1[minDepth]+10.0f)/Mathf.Sin(Mathf.PI / levelmaxnum[0]);
         
         foreach (Children item in m_tree.children)
         {
@@ -213,5 +232,25 @@ public class ReadJson : MonoBehaviour
                 getmaxnum(item,level+1);
             }
         }
+    }
+
+    int branchDepth(Children child, int level)
+    {
+        int depth = 0;
+        if (child.children.Length > 0)
+        {
+            foreach(Children item in child.children)
+            {
+                
+                depth = branchDepth(item,level+1);
+            }
+        }
+        else
+        {
+            depth = level;
+        }
+
+        return depth;
+
     }
 }
