@@ -57,7 +57,8 @@ public class SpawnObject : MonoBehaviour
         //Debug.Log(this.gameObject.GetComponentsInChildren<Transform>().GetValue(3).ConvertTo<Transform>().name);
         //Debug.Log(40.0f/tradius);
         this.gameObject.GetComponentsInChildren<Transform>().GetValue(4).ConvertTo<Transform>().transform.localScale = new Vector3(0.01f*tradius/4.0f,0.01f*tradius/4.0f,0.01f*tradius/4.0f);
-         
+        gameObject.GetComponentsInChildren<RectTransform>().GetValue(1).ConvertTo<RectTransform>().localScale = new Vector3(0.15f*c_member.name.Length,1,1);
+        
         GameObject prefab = (GameObject)Resources.Load("Sphere");
         GameObject cy = (GameObject)Resources.Load("Cylinder");
         this.name = c_member.name;

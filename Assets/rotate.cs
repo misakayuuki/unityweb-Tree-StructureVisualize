@@ -80,8 +80,8 @@ public class rotate : MonoBehaviour
                     
 
                     Camera.main.transform.position =
-                        new Vector3(afterrotation.x+150, afterrotation.y+80, afterrotation.z);
-                    Camera.main.transform.rotation = Quaternion.Euler(new Vector3(25,-90,0));
+                        new Vector3(afterrotation.x+150, afterrotation.y, afterrotation.z);
+                    Camera.main.transform.rotation = Quaternion.Euler(new Vector3(5,-90,0));
 
                 }
                 else

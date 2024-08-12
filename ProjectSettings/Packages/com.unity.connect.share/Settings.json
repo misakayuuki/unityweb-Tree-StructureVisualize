@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"/Users/apple/iscas/v1.3.1;/Users/apple/iscas/v1.3;/Users/apple/iscas/v1.2;/Users/apple/iscas/v1.1;/Users/apple/iscas/v1.0;/Users/apple/iscas/234;/Users/apple/iscas/123;;;\"}"
+                "value": "{\"m_Value\":\"/Users/apple/iscas/v1.5;/Users/apple/iscas/v1.4;/Users/apple/iscas/v1.3.1;/Users/apple/iscas/v1.3;/Users/apple/iscas/v1.2;/Users/apple/iscas/v1.1;/Users/apple/iscas/v1.0;/Users/apple/iscas/234;/Users/apple/iscas/123;\"}"
             }
         ]
     }
